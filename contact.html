@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/0308e04451.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <title>Eduford - World Biggest University</title>
+</head>
+
+<body>
+
+    <!----Header---->
+    <section class="sub-header">
+        <nav>
+            <a href="#"><img src="images/logo.png" alt="Logo"></a>
+
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+
+        <div class="blog-text-box">
+            <h1>Contact Us</h1>
+        </div>
+    </section>
+
+    <!----Contact---->
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7303.80308013148!2d90.40349417304651!3d23.750890258542427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b888ad339cb5%3A0x20c70986185ad2ba!2sMogbazar%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1630504084964!5m2!1sen!2sbd"
+            width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <h2>Contact Us</h2>
+        <p>KITS,MARKAPUR.</p>
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>
+                        <h3>Address</h3>
+                        <p>Devarajugattu, Markapur,prakasam(dt)</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fas fa-phone"></i>
+                    <span>
+                        <h3>Phone</h3>
+                        <p>+91 9666301309</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <span>
+                        <h3>Email</h3>
+                        <p>principal@kits-anna.com</p>
+                    </span>
+                </div>
+            </div>
+
+            <div class="contact-col">
+
+                <div class="contact-box">
+                    <h3>Leave us a message</h3>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Enter Your Name">
+                        <input type="email" placeholder="Enter Your Email">
+                        <textarea rows="5" placeholder="Write a message..."></textarea>
+                        <button type="submit" class="hero-btn-red">SUBMIT</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!----Footer---->
+    <section class="footer">
+        <h4>ABOUT US</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum odio deleniti eos, ea omnis labore, expedita
+            deserunt soluta<br>autem at sapiente voluptate doloribus praesentium quia quos tenetur, error maxime ad!</p>
+
+        <div class="icons">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-twitch" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart" aria-hidden="true"></i> By <a href="#">MdRasen</a></p>
+    </section>
+
+
+    <!---Javascript for toggole menu--->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+</body>
+
+</html>
